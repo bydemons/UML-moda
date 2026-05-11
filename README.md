@@ -6,23 +6,54 @@
 
 ## ✅ Requisitos Funcionais
 
-- O sistema deve permitir login de administrador.
-- O sistema deve permitir visualizar catálogo de roupas.
-- O sistema deve permitir realizar agendamentos.
-- O sistema deve permitir concluir agendamentos.
-- O sistema deve permitir excluir agendamentos.
-- O sistema deve permitir visualizar o dashboard administrativo.
+| Código | Requisito Funcional | Relacionado ao Caso de Uso |
+|---|---|---|
+| RF01 | O sistema deve permitir login do administrador | Fazer Login |
+| RF02 | O sistema deve permitir visualizar catálogo | Visualizar Catálogo |
+| RF03 | O sistema deve permitir realizar agendamentos | Realizar Agendamento |
+| RF04 | O sistema deve permitir concluir agendamentos | Concluir Agendamento |
+| RF05 | O sistema deve permitir excluir agendamentos | Excluir Agendamento |
+| RF06 | O sistema deve permitir visualizar dashboard | Visualizar Dashboard |
 
 ---
 
 ## ⚙️ Requisitos Não Funcionais
 
-- O sistema deve possuir autenticação de acesso.
-- O sistema deve utilizar banco de dados MySQL.
-- O sistema deve ter interface responsiva.
-- O sistema deve garantir segurança de sessão.
-- O sistema deve possuir boa performance.
-- O sistema deve funcionar via navegador web.
+| Código | Requisito Não Funcional | Relacionado à Estrutura |
+|---|---|---|
+| RNF01 | O sistema deve possuir autenticação segura | Admin / Session |
+| RNF02 | O sistema deve utilizar banco MySQL | Database |
+| RNF03 | O sistema deve possuir boa performance | Controllers |
+| RNF04 | O sistema deve funcionar em navegador web | Frontend |
+| RNF05 | O sistema deve possuir controle de sessão | PHP Session |
+
+---
+
+# 🎯 Diagrama de Caso de Uso UML
+
+```mermaid
+flowchart LR
+
+Cliente((Cliente))
+Admin((Administrador))
+
+UC1[Visualizar Catálogo]
+UC2[Cadastrar Dados]
+UC3[Realizar Agendamento]
+UC4[Fazer Login]
+UC5[Concluir Agendamento]
+UC6[Excluir Agendamento]
+UC7[Visualizar Dashboard]
+
+Cliente --> UC1
+Cliente --> UC2
+Cliente --> UC3
+
+Admin --> UC4
+Admin --> UC5
+Admin --> UC6
+Admin --> UC7
+```
 
 ## 📂 Estrutura do Projeto
 
