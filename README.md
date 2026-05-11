@@ -123,27 +123,6 @@ php -S localhost:8080
 
 ---
 
-## 🎯 Funcionalidades
-
-```mermaid
-flowchart LR
-    C[Cliente]
-    A[Administrador]
-
-    UC1[Visualizar Catálogo de Roupas]
-    UC2[Cadastrar Dados Pessoais]
-    UC3[Realizar Agendamento de Peça]
-    UC4[Gerenciar Estoque de Roupas]
-    UC5[Consultar Agendamentos Realizados]
-
-    C --> UC1
-    C --> UC2
-    C --> UC3
-
-    A --> UC3
-    A --> UC4
-    A --> UC5
-```
 
 ### 🛍️ Catálogo
 - Grid responsivo com foto, nome, categoria e preço
