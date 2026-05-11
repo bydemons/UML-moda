@@ -286,3 +286,34 @@ ClienteController --> ClienteModel
 RoupaController --> RoupaModel
 AgendamentoController --> AgendamentoModel
 ```
+
+---
+
+# 🔄 Diagrama de Sequência UML
+
+```mermaid
+sequenceDiagram
+
+actor Cliente
+
+participant Sistema
+participant AgendamentoController
+participant AgendamentoModel
+participant Database
+
+Cliente->>Sistema: Solicita agendamento
+
+Sistema->>AgendamentoController: Envia dados do formulário
+
+AgendamentoController->>AgendamentoModel: validarAgendamento()
+
+AgendamentoModel->>Database: verificarConflito()
+
+Database-->>AgendamentoModel: Horário disponível
+
+AgendamentoModel-->>AgendamentoController: Agendamento válido
+
+AgendamentoController-->>Sistema: Salvar agendamento
+
+Sistema-->>Cliente: Confirmação de sucesso
+```
