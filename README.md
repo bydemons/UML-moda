@@ -224,3 +224,65 @@ Admin --> UC5
 Admin --> UC6
 Admin --> UC7
 ```
+
+---
+
+# 🧩 Diagrama de Classes UML
+
+```mermaid
+classDiagram
+
+class Database {
+    +getInstance()
+    +getConnection()
+}
+
+class ClienteModel {
+    -id
+    -nome
+    -cpf
+    -telefone
+    +cadastrarCliente()
+    +buscarCliente()
+}
+
+class RoupaModel {
+    -id
+    -nome
+    -preco
+    -categoria
+    +listarRoupas()
+}
+
+class AgendamentoModel {
+    -id
+    -data
+    -status
+    +criarAgendamento()
+    +verificarConflito()
+    +concluir()
+    +excluir()
+}
+
+class ClienteController {
+    +cadastrar()
+    +validarDados()
+}
+
+class RoupaController {
+    +listar()
+}
+
+class AgendamentoController {
+    +agendar()
+    +consultar()
+}
+
+Database --> ClienteModel
+Database --> RoupaModel
+Database --> AgendamentoModel
+
+ClienteController --> ClienteModel
+RoupaController --> RoupaModel
+AgendamentoController --> AgendamentoModel
+```
