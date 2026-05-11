@@ -2,6 +2,27 @@
 > Plataforma web para pequenos empreendedores do setor de vestuário
 
 ---
+# 📋 Requisitos do Sistema
+
+## ✅ Requisitos Funcionais
+
+- O sistema deve permitir login de administrador.
+- O sistema deve permitir visualizar catálogo de roupas.
+- O sistema deve permitir realizar agendamentos.
+- O sistema deve permitir concluir agendamentos.
+- O sistema deve permitir excluir agendamentos.
+- O sistema deve permitir visualizar o dashboard administrativo.
+
+---
+
+## ⚙️ Requisitos Não Funcionais
+
+- O sistema deve possuir autenticação de acesso.
+- O sistema deve utilizar banco de dados MySQL.
+- O sistema deve ter interface responsiva.
+- O sistema deve garantir segurança de sessão.
+- O sistema deve possuir boa performance.
+- O sistema deve funcionar via navegador web.
 
 ## 📂 Estrutura do Projeto
 
