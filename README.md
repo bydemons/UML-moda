@@ -251,34 +251,6 @@ classDiagram
 
 ---
 
-# 🎯 Diagrama de Caso de Uso UML
-
-```mermaid
-flowchart LR
-
-Cliente((Cliente))
-Admin((Administrador))
-
-UC1[Visualizar Catálogo]
-UC2[Cadastrar Dados]
-UC3[Realizar Agendamento]
-UC4[Fazer Login]
-UC5[Concluir Agendamento]
-UC6[Excluir Agendamento]
-UC7[Visualizar Dashboard]
-
-Cliente --> UC1
-Cliente --> UC2
-Cliente --> UC3
-
-Admin --> UC4
-Admin --> UC5
-Admin --> UC6
-Admin --> UC7
-```
-
----
-
 # 🧩 Diagrama de Classes UML
 
 ```mermaid
